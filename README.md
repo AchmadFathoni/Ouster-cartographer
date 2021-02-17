@@ -5,18 +5,15 @@ This repository contains package, that integrates Ouster lidar (https://ouster.c
 offline/online SLAM. This repository is mainly to speed up the your process of getting into calibration of Cartographer for Ouster lidar.
 ## Installation
 
-Requires operating system with __ros melodic__ (Ubuntu 18 with ros-melodic).
+Requires operating system with __ros noetic__ (Ubuntu 20 with ros-noetic).
 
 Further steps are run in the console:
-1. Install cartographer packages or build them directly in your directory.
-    * sudo apt install ros-melodic-cartographer-ros
-    * sudo apt install ros-melodic-cartographer-ros-msgs
-    * sudo apt install ros-melodic-cartographer-rviz
+1. There is no cartographer package for noetic(yet), so you must build and install it.
 2. Create a workspace directory
-    * source /opt/ros/melodic/setup.bash -> your path to ROS
+    * source /opt/ros/noetic/setup.bash -> your path to ROS
     * mkdir -p oslam_ws/src  
     * cd oslam_ws
-    * git clone git@github.com:Miro001/Ouster-cartographer.git src
+    * git clone git@github.com:AchmadFathoni/Ouster-cartographer.git src
     * cd src  
     * git submodule update --init --recursive
     * cd ..
