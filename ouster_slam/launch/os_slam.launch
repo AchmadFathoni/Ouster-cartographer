@@ -50,7 +50,6 @@
           -configuration_directory $(arg carto_conf)/configuration_files
           -configuration_basename os1_16.lua"
         output="screen">
-
   </node>
 
   <node name="cartographer_occupancy_grid_node" pkg="cartographer_ros"
