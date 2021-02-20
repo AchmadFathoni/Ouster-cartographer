@@ -19,9 +19,9 @@
   <exec_depend>pcl_ros</exec_depend>
   <exec_depend>pcl_conversions</exec_depend>
   <exec_depend>ouster_ros</exec_depend>
-  <exec_depend>ros-melodic-cartographer-ros</exec_depend>
+  <exec_depend>ros-noetic-cartographer-ros</exec_depend>
   <exec_depend>cartographer_ros_msgs</exec_depend>
-  <exec_depend>ros-melodic-cartographer-rviz</exec_depend>
+  <exec_depend>ros-noetic-cartographer-rviz</exec_depend>
 
   <export>
     <!-- Other tools can request additional information be placed here -->
