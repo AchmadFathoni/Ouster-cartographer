@@ -1,6 +1,3 @@
 [submodule "ouster_example"]
 	path = ouster_example
 	url = git@github.com:AchmadFathoni/ouster_example.git
-[submodule "sjtu-drone"]
-	path = sjtu-drone
-	url = git@github.com:AchmadFathoni/sjtu-drone.git

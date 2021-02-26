@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>drone_simulation</name>
+  <version>0.0.0</version>
+  <description>Irish drone with GPU+IMU+LIDAR+Ardupilot</description>
+  <maintainer email="fathoni.id@gmail.com">Achmad Fathoni</maintainer>
+  <license>GPLv2</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>std_msgs</build_export_depend>
+
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>mavros</exec_depend>
+
+  <export>
+    <gazebo_ros gazebo_model_path="${prefix}/models"/>
+    <gazebo_ros gazebo_media_path="${prefix}/models"/>
+  </export>
+</package>
