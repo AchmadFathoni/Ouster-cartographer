@@ -1,6 +1,6 @@
 <launch>
   <arg name="paused" value="false"/>
-  <arg name="verbose" value="true"/>
+  <arg name="verbose" value="false"/>
   <arg name="world_name" default="$(find drone_simulation)/world/my.world"/>
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch" >
