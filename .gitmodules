@@ -1,3 +1,6 @@
 [submodule "ouster_example"]
 	path = ouster_example
 	url = git@github.com:AchmadFathoni/ouster_example.git
+[submodule "ouster-gazebo-simulation"]
+	path = ouster-gazebo-simulation
+	url = https://gitlab.laas.fr/gepetto/ouster-gazebo-simulation.git
