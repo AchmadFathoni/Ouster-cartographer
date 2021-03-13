@@ -33,6 +33,10 @@ options = {
       max_intensity = 4095.,
     },
     {
+      action = "voxel_filter_and_remove_moving_objects",
+      voxel_size = VOXEL_SIZE,
+    },
+    {
       action = "write_pcd",
       filename = "points.pcd",
     },
