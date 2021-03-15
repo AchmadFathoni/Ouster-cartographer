@@ -43,7 +43,7 @@
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
     <model name='sonoma_raceway'>
-      <pose>0 0 0 0 0 -1.5708</pose>
+      <pose>0 0 -30.4 0 0 -1.5708</pose>
       <static>1</static>
       <link name='link'>
         <collision name='collision'>
@@ -81,7 +81,7 @@
       </link>
     </model>
     <model name="iris_demo">
-      <pose>0 0 30.5 0 0 0</pose>
+      <pose>0 0 0.1 0 0 0</pose>
       <include>
         <uri>model://iris_with_gila</uri>
       </include>
