@@ -1,7 +1,7 @@
 <launch>
   <arg name="paused" value="false"/>
   <arg name="verbose" value="false"/>
-  <arg name="world_name" default="$(find drone_simulation)/world/my.world"/>
+  <arg name="world_name" default="$(find drone_simulation)/world/sonoma.xml"/>
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch" >
     <arg name="paused" value="$(arg paused)"/>
