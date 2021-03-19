@@ -581,13 +581,6 @@
         <controlVelocitySlowdownSim>1</controlVelocitySlowdownSim>
       </control>
     </plugin>
-
-    <plugin filename="libhector_gazebo_ros_imu.so" name="quadrotor_imu_sim">
-      <updateRate>100.0</updateRate>
-      <bodyName>iris::base_link</bodyName>
-      <frameId>iris::base_link</frameId>
-      <topicName>raw_imu</topicName>
-    </plugin>
     
     <plugin filename="libhector_gazebo_ros_gps.so" name="quadrotor_gps_sim">
       <updateRate>5.0</updateRate>
