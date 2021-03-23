@@ -50,7 +50,7 @@
   <joint name="os_link_joint" type="fixed">
     <parent link="os_sensor" />
     <child link="os_lidar" />
-    <origin xyz="0.0 0.0 0.03618" rpy="0 0 3.14159" />
+    <origin xyz="0.0 0.0 0.03618" rpy="0 0 0" />
   </joint>
 
 </robot>
