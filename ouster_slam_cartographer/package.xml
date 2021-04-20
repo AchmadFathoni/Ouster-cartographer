@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>ouster_slam</name>
+  <name>ouster_slam_cartographer</name>
   <version>0.0.1</version>
-  <description>The ouster_slam package integrates cartographer and ouster sensor.</description>
+  <description>The ouster_slam_cartographer_cartographer package integrates cartographer and ouster sensor.</description>
 
   <maintainer email="miroslav.jascur@tuke.sk">miro</maintainer>
 
