@@ -1,0 +1,4 @@
+<launch>
+    <arg name="topics_name" default="/fix /imu /points2"/>
+    <node name="rosbag_record" pkg="rosbag" type="record" output="screen" args="$(arg topics_name)"/>
+</launch>

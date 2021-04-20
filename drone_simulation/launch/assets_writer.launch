@@ -1,0 +1,13 @@
+<launch>
+  <arg name="bag_filenames" value="/home/toni/.ros/2021-04-06-17-33-57.bag" doc="bag file"/>
+  <arg name="pose_graph_filename" value="/home/toni/.ros/2021-04-06-17-33-57.bag.pbstream" doc="pbstream file "/>
+  <node name="cartographer_assets_writer" pkg="cartographer_ros" required="true"
+      type="cartographer_assets_writer" args="
+          -configuration_directory $(find drone_simulation)/configuration_files
+          -configuration_basename assets_writer_backpack_3d.lua
+          -urdf_filename $(find drone_simulation)/urdf/drone.urdf
+          -bag_filenames $(arg bag_filenames)
+          -pose_graph_filename $(arg pose_graph_filename)"
+      output="screen">
+  </node>
+</launch>
