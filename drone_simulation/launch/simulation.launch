@@ -2,7 +2,7 @@
   <arg name="paused" value="false"/>
   <arg name="verbose" value="false"/>
   <arg name="world_name" default="$(find drone_simulation)/world/sonoma.xml"/>
-
+  <arg name="gui" value="false"/>
   <param name="robot_description" command="$(find xacro)/xacro $(find drone_simulation)/urdf/drone.urdf"/>
 
   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
@@ -12,5 +12,6 @@
     <arg name="paused" value="$(arg paused)"/>
     <arg name="world_name" value="$(arg world_name)"/>
     <arg name="verbose" value="$(arg verbose)"/>
+    <arg name="gui" value="$(arg gui)"/>
   </include>
 </launch>
