@@ -119,15 +119,15 @@
     <param name="reg_nn_search_method" value="DIRECT7" />
     <!-- edge params -->
     <!-- GPS -->
-    <param name="gps_edge_robust_kernel" value="NONE" />
-    <param name="gps_edge_robust_kernel_size" value="1.0" />
+    <param name="gps_edge_robust_kernel" value="Cauchy" />
+    <param name="gps_edge_robust_kernel_size" value="89999.0" />
     <param name="gps_edge_stddev_xy" value="0.0" />
     <param name="gps_edge_stddev_z" value="0.0" />
     <!-- IMU orientation -->
-    <param name="imu_orientation_edge_robust_kernel" value="NONE" />
+    <param name="imu_orientation_edge_robust_kernel" value="Cauchy" />
     <param name="imu_orientation_edge_stddev" value="0.0" />
     <!-- IMU acceleration (gravity vector) -->
-    <param name="imu_acceleration_edge_robust_kernel" value="NONE" />
+    <param name="imu_acceleration_edge_robust_kernel" value="Cauchy" />
     <param name="imu_acceleration_edge_stddev" value="0.0" />
     <!-- ground plane -->
     <param name="floor_edge_robust_kernel" value="NONE" />
@@ -139,13 +139,13 @@
     <param name="loop_closure_edge_robust_kernel" value="Huber" />
     <param name="loop_closure_edge_robust_kernel_size" value="1.0" />
     <param name="use_const_inf_matrix" value="false" />
-    <param name="const_stddev_x" value="0.5" />
-    <param name="const_stddev_q" value="0.1" />
+    <param name="const_stddev_x" value="9999999" />
+    <param name="const_stddev_q" value="9999999" />
     <param name="var_gain_a" value="20.0" />
-    <param name="min_stddev_x" value="0.1" />
-    <param name="max_stddev_x" value="5.0" />
-    <param name="min_stddev_q" value="0.05" />
-    <param name="max_stddev_q" value="0.2" />
+    <param name="min_stddev_x" value="9999999" />
+    <param name="max_stddev_x" value="999999999" />
+    <param name="min_stddev_q" value="9999999" />
+    <param name="max_stddev_q" value="999999999" />
     <!-- update params -->
     <param name="graph_update_interval" value="1.0" />
     <param name="map_cloud_update_interval" value="5.0" />
