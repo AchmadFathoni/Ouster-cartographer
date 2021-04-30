@@ -586,7 +586,7 @@
       <updateRate>10.0</updateRate>
       <bodyName>iris::base_link</bodyName>
       <frameId>iris::base_link</frameId>
-      <topicName>fix</topicName>
+      <topicName>/gps/navsat</topicName>
       <velocityTopicName>fix_velocity</velocityTopicName>
       <referenceLatitude>-35.363262</referenceLatitude>
       <referenceLongitude>149.165237</referenceLongitude>
