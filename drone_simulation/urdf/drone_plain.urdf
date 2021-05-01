@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<robot name="iris">
+  <link name="os_sensor" />
+  <link name="base_link" />
+  <joint name="sensor_link_joint" type="fixed">
+    <parent link="base_link" />
+    <child link="os_sensor" />
+  </joint>
+</robot>
