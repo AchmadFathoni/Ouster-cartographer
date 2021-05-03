@@ -7,12 +7,14 @@
 
     <include>
       <uri>model://os1_32</uri>
-      <pose>-0.035 0 0.112 0 1.570796 0</pose>
+      <!--Pose pitch is 0, 1.57 always error-->
+      <pose>-0.035 0 0.112 0 0 0</pose>
+      <static>1</static>
     </include>
 
     <joint name="lidar_joint" type="fixed">
-      <child>iris_demo::os1_32::base_footprint_link</child>
-      <parent>iris_demo::iris::base_link</parent>
+      <parent>os1_32::base_footprint_link</parent>
+      <child>iris::base_link</child>
     </joint>
 
     <!-- visual markers for debugging
@@ -588,8 +590,8 @@
       <frameId>iris::base_link</frameId>
       <topicName>/gps/navsat</topicName>
       <velocityTopicName>fix_velocity</velocityTopicName>
-      <referenceLatitude>-35.363262</referenceLatitude>
-      <referenceLongitude>149.165237</referenceLongitude>
+      <referenceLatitude>38.16260828419114</referenceLatitude>
+      <referenceLongitude>-122.4578703460479</referenceLongitude>
     </plugin>
 
   </model>

@@ -1,13 +1,9 @@
 <?xml version="1.0"?>
 <launch>
-  <arg name="paused" value="false"/>
-  <arg name="verbose" value="false"/>
+  <arg name="paused" default="false"/>
+  <arg name="verbose" default="false"/>
   <arg name="world_name" default="$(find drone_simulation)/world/sonoma.xml"/>
   <arg name="gui" default="false"/>
-  <param name="robot_description" command="$(find xacro)/xacro $(find drone_simulation)/urdf/drone.urdf"/>
-
-  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
-  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch" >
     <arg name="paused" value="$(arg paused)"/>

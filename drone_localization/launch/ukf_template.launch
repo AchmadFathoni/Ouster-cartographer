@@ -6,11 +6,13 @@
 
   <node pkg="robot_localization" type="navsat_transform_node" name="navsat_transform_node" clear_params="true">
     <rosparam command="load" file="$(find drone_localization)/params/navsat_transform_template.yaml" />
-    <remap from="imu/data" to="/imu_enu"/>    
-    <remap from="gps/fix" to="/fix"/>  
+    <remap from="imu/data" to="/imu"/>    
+    <remap from="gps/fix" to="/gps/navsat"/>  
   </node>
 
   <node pkg="tf2_ros" type="static_transform_publisher" name="sdf" args="0 0 0 0 0 0 base_link iris_demo::iris::base_link" />
   <node type="rviz" name="rviz" pkg="rviz" args="-d $(find drone_localization)/config/rviz.rviz" />
-  <node type="ned2enu" name="ned2enu" pkg="drone_localization"/>
+  <param name="robot_description" command="$(find xacro)/xacro $(find drone_simulation)/urdf/drone.urdf"/>
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
 </launch>

@@ -4,6 +4,3 @@
 [submodule "ouster-gazebo-simulation"]
 	path = ouster-gazebo-simulation
 	url = https://gitlab.laas.fr/gepetto/ouster-gazebo-simulation.git
-[submodule "hector_localization"]
-	path = hector_localization
-	url = git@github.com:tu-darmstadt-ros-pkg/hector_localization.git
