@@ -2,13 +2,13 @@
 <launch>
   <arg name="paused" value="false"/>
   <arg name="verbose" value="false"/>
-  <arg name="world_name" default="worlds/iris_arducopter_runway.world"/>
+  <arg name="world_name" default="worlds/empty.world"/>
   <arg name="gui" default="true"/>
 
-  <param name="robot_description" command="$(find xacro)/xacro $(find drone_simulation)/urdf/drone_plain.urdf"/>
+  <param name="robot_description" command="$(find xacro)/xacro $(find drone_simulation)/urdf/drone.urdf"/>
   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
-  <node name="spawn" pkg="gazebo_ros" type="spawn_model" args="-file $(find drone_simulation)/models/iris_plain_gps_imu/model.sdf -sdf -model iris_demo"/>
+  <node name="spawn" pkg="gazebo_ros" type="spawn_model" args="-file $(find drone_simulation)/models/iris_with_gila/model.sdf -sdf -model iris_demo"/>
   <include file="$(find gazebo_ros)/launch/empty_world.launch" >
     <arg name="paused" value="$(arg paused)"/>
     <arg name="world_name" value="$(arg world_name)"/>

@@ -125,7 +125,7 @@ odom0_relative: false
 #odom0_pose_rejection_threshold: 5
 #odom0_twist_rejection_threshold: 1
 
-imu0: /imu
+imu0: /gpsimu_driver/imu_data
 imu0_config: [false, false, false,
               true, true, true,
               false, false, false,
