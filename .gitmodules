@@ -4,12 +4,3 @@
 [submodule "ouster-gazebo-simulation"]
 	path = ouster-gazebo-simulation
 	url = https://gitlab.laas.fr/gepetto/ouster-gazebo-simulation.git
-[submodule "fast_gicp"]
-	path = fast_gicp
-	url = https://github.com/SMRT-AIST/fast_gicp
-[submodule "ndt_omp"]
-	path = ndt_omp
-	url = https://github.com/koide3/ndt_omp
-[submodule "hdl_graph_slam"]
-	path = hdl_graph_slam
-	url = https://github.com/koide3/hdl_graph_slam
