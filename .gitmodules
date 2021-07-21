@@ -4,3 +4,6 @@
 [submodule "ouster-gazebo-simulation"]
 	path = ouster-gazebo-simulation
 	url = https://gitlab.laas.fr/gepetto/ouster-gazebo-simulation.git
+[submodule "pos2bag"]
+	path = pos2bag
+	url = git@github.com:naoki-mizuno/pos2bag.git
